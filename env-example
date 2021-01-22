@@ -1,0 +1,5 @@
+ //add your cluster connection string here to connect to mongodb
+mongoURL=""  
+
+//add port here server to run
+PORT=

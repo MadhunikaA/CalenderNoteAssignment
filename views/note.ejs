@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a type="button" href="/"><button class="buttonClass">Go to Calender</button></a>
+    <table id="customers">
+        <tr>
+            <th>Note</th>
+            <th>Start date</th>
+            <th>End date</th>
+        </tr>
+        <% if(data.length > 0) { %>
+        <% for(let dt of data) { %>
+        <tr>
+            <td><%= dt.text %></td>
+            <td><%= dt.start_date %></td>
+            <td><%= dt.end_date %></td>
+        </tr>
+        <% } %>
+        <% } %>
+    </table>
+</body>
+
+</html>
